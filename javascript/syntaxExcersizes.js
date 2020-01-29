@@ -3,6 +3,7 @@ let sum = 0
 for (var i = 0; i < 10; i++) {
   sum += (i**2)
 }
+console.log(sum);
 
 let k = 0
 let j = 1
@@ -12,6 +13,7 @@ while(s <= 1000){
   k = j;
   j = s;
 }
+console.log(s);
 
 let ssum = 0;
 let count = 0;
