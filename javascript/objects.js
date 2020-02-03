@@ -31,3 +31,22 @@ console.log(circle.center.x);
 console.log(circle.color);
 circle.color = "blue";
 console.log(circle);
+
+// Arrays
+const languages = ['HTML','CSS','JS'];
+console.log(languages);
+
+//Accesing length and elements
+for (let i=0; i<languages.length;i++){
+  console.log(languages[i]);
+}
+
+languages[2]='JavaScript';
+
+// Adding elements
+languages.push('MonogoDB');
+
+// Iterating over elements
+for (const lang of languages){
+  console.log(lang);
+}
