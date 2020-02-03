@@ -37,6 +37,9 @@ Book.prototype.authorCheck = function(s){
       return true;
     }
   }
+  else{
+    return false;
+  }
 }
 b1 = new Book('Poopy', ['Mary','Mat']);
 b2 = new Book('Poo',['bob']);
@@ -45,23 +48,25 @@ console.log(b1.authorCheck("Mary"));
 console.log(b2.authorCheck("<ary"));
 
 
-// q3
-function range(end){
+
+//q3
+function range(start, end){
+  if(end === undefined){
     let arr = []
-    for(let i =0; i< end;i++){
+    for(let i =0; i< start;i++){
       arr.push(i);
     }
     return arr;
-}
-
-function range(start, end){
-  let arr = []
-  for(let i =start; i< end;i++){
-    arr.push(i);
   }
-  return arr;
+  else{
+    let arr = []
+    for(let i =start; i< end;i++){
+      arr.push(i);
+    }
+    return arr;
+  }
 }
 
 
-console.log(range(2,4));
+console.log(range(2,6));
 console.log(range(5));
