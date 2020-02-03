@@ -43,3 +43,8 @@ while(true){
   count = 0;
   start ++;
 }
+
+
+function f(p1, p2){
+  return p1*p2;
+}
