@@ -37,9 +37,7 @@ Book.prototype.authorCheck = function(s){
       return true;
     }
   }
-  else{
-    return false;
-  }
+  return false;
 }
 b1 = new Book('Poopy', ['Mary','Mat']);
 b2 = new Book('Poo',['bob']);
