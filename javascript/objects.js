@@ -17,11 +17,11 @@ const circle ={
     radius: 4
 };
 
-// also this works
-const circle2 ={
-  center:{x:3,y:4}
-  radius: 4
-};
+// // also this works
+// const circle ={
+//   center:{x:3,y:4}
+//   radius: 4
+// };
 
 // access sub properties
 console.log(circle.center.x);
