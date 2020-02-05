@@ -18,3 +18,11 @@ const n = [1,2,3,4,5];
 
 console.log(map(n,square));
 console.log(n);
+
+// Defining transforms with arrow function
+console.log(map(n,x => x**2));
+console.log(map(n,x => x+1));
+
+// built in map
+console.log(n.map(x => x**2));
+console.log(n.map(x => x+1));
