@@ -11,7 +11,7 @@ const map = function(array, transform){
 };
 // function passed above
 const square = function(e){
-  return x ** 2;
+  return e ** 2;
 };
 
 const n = [1,2,3,4,5];
