@@ -20,11 +20,7 @@ console.log(map(n,square));
 console.log(n);
 
 // Defining transforms with arrow function
-<<<<<<< HEAD
 console.log(map(n,x => x**2));
-=======
-console.log(map(n,x => x**2);
->>>>>>> 764f8163da9b46c28959529bf56683e741b96f60
 console.log(map(n,x => x+1));
 
 // built in map
