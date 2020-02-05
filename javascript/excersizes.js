@@ -27,8 +27,8 @@ console.log(largest(cArray));
 // q2
 
 const Book = function(title, author){
-    this.title = title;
-    this.author = author
+    this.title = title,
+    this.author = author,
 }
 
 Book.prototype.authorCheck = function(s){

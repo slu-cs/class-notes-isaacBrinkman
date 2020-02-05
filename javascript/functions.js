@@ -16,8 +16,8 @@ print(9);
 
 // object with method
 const rectangle = {
-    width = 10,
-    height = 20,
+    width: 10,
+    height: 20,
     area: function(){
       return this.width * this.height;
     }
