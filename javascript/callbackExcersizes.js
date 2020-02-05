@@ -2,6 +2,7 @@
 const filter = function(n, f){
   const copy =[];
   for(const a in n){
+    console.log(a);
     if(f(a)){
       copy.push(a);
     }
