@@ -1,7 +1,7 @@
 //Q1
 const filter = function(n, f){
   const copy =[];
-  for(const a in n){
+  for(const a of n){
     console.log(a);
     if(f(a)){
       copy.push(a);
