@@ -2,9 +2,8 @@
 const filter = function(n, f){
   const copy =[];
   for(const a in n){
-    if(f(n)){
-      copy.push(n);
-
+    if(f(a)){
+      copy.push(a);
     }
   }
   return copy
