@@ -45,4 +45,4 @@ mongoose.connection.dropDatabase(function(){
       });
     });
   });
-};
+});
