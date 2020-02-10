@@ -11,10 +11,10 @@ const Professor = new mongoose.Schema({
 });
 
 // Speed up queries on all fields
-Proffesor.index({name: 1});
-Proffesor.index({rank: 1});
-Proffesor.index({started: 1});
-Proffesor.index({courses: 1});
+Professor.index({name: 1});
+Professor.index({rank: 1});
+Professor.index({started: 1});
+Professor.index({courses: 1});
 
 // Compile and export this schema
 module.exports = mongoose.model('Professor', Professor);
