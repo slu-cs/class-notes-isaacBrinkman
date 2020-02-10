@@ -17,4 +17,4 @@ Proffesor.index({started: 1});
 Proffesor.index({courses: 1});
 
 // Compile and export this schema
-module.exports = mongoose.model('Professor', Professor);;;;;;;
+module.exports = mongoose.model('Professor', Professor);
