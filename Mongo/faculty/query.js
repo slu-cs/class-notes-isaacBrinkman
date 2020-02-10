@@ -12,3 +12,8 @@ query.exec(function(error, professors){
   if(error) console.error(error.stack);
   console.log(professors);
 });
+
+query.exec(function(error, professors){
+	if(error) console.error(error.stack);
+	console.log(professors.name);
+});
