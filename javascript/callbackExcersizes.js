@@ -2,7 +2,6 @@
 const filter = function(n, f){
   const copy =[];
   for(const a of n){
-    console.log(a);
     if(f(a)){
       copy.push(a);
     }
@@ -12,3 +11,5 @@ const filter = function(n, f){
 
 const numbers = [1, 2, 3, 4, 5];
 console.log(filter(numbers, x => x%2 > 0));
+
+//Q2
