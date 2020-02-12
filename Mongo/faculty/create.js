@@ -29,20 +29,10 @@ const lee = new Professor({
 });
 
 // delete any previous data
-mongoose.connection.dropDatabase(function(){
-  // this function is called after the database is dropped
-  // so new data must be saved here
-  harcourt.save(function(error){
-    if(error) console.error(error.stack);
-    torrey.save(function(error){
-      if(error) console.error(error.stack);
-      lee.save(function(error){
-        if(error) console.error(error.stack);
-        // disconnect
-        mongoose.connection.close(function(){
-          console.log("DB is ready");
-        });
-      });
-    });
-  });
-});
+mongoose.connection.dropDatabase()
+  .then(() => harcourt.save())
+  .then(() => torrey.save())
+  .then(() =>lee.save())
+  .then(() => mongoose.connection.close()
+  .then(() => console.log("DB is ready"))
+  .catch(error => console.log(error.stack));
