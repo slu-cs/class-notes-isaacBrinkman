@@ -13,12 +13,28 @@
   <div id="history"></div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>
+
+    let counter = 0;
+
     $('form').on('submit',function(event){
       const form = $(this); //this represents the native javascript element that represents the for
       event.preventDefault();
       // take the ul and make  it into a jQuery obj
       const list = $('<ul></ul>');
-      console.log(form.serialize());
+      const input = form.find('input');
+      // loop thru all inputs represented by the jQuery objects
+      // i is a native obj not jQuery
+      for (let i of input){
+        i = $(i); // Turn into a JQuery
+        const li = $(`<li>${i.val()}</li>`);
+        // stick one tag into another with append (at the back)
+        list.append(li);
+        input.val('');
+      }
+      counter ++;
+      $('#history').append($(`<p>Submit #${counter}</p>`));
+
+      $('#history').append(list);
     });
   </script>
 </body>
