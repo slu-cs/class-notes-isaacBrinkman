@@ -30,7 +30,7 @@ console.log(num);
 // B. Define a standalone find function. The array is its first argument and the callback is its second argument.
 const find = function(a,f){
   for(const e of a){
-    if(f(e) return e)
+    if(f(e)) return e
   }
 }
 
