@@ -39,7 +39,6 @@ const find = function(a,f){
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
 const fs = require('fs');
-
 const readline = require('readline');
 const user = readline.createInterface({
   input: process.stdin,
@@ -48,14 +47,7 @@ const user = readline.createInterface({
 
 // A. Make small talk, using traditional callbacks.
 user.question('What is your name?', function(name) {
-  // file config
-  const file = readline.createInterface({
-    input: fs.createReadStream(name)
-  });
-  //asynch line-by-line input
-  file.on('line', function(line){
     user.question("Hello "+name+"\n How are you doing?",function(state){
-      file.on('line', function(line){
         console.log("I am also" + fine);
       })
     })
