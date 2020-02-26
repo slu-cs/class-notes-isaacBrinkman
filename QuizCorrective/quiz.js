@@ -50,14 +50,8 @@ user.question('What is your name?', function(name) {
     user.question("Hello "+name+"\n How are you doing?",function(state){
         console.log("I am also" + fine);
       })
-    })
-  });
+    });
 
-  // end the program
-  file.on('close', function(){
-    process.exit(0);
-  });
-});
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
 // Call this question function in part B instead of calling the user.question method.
