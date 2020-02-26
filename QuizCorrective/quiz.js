@@ -38,6 +38,8 @@ const find = function(a,f){
 
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
+const fs = require('fs');
+
 const readline = require('readline');
 const user = readline.createInterface({
   input: process.stdin,
