@@ -28,7 +28,7 @@ const num = numbers.find(n => (n%2)===0);
 console.log(num);
 
 // B. Define a standalone find function. The array is its first argument and the callback is its second argument.
-const find = fucntion(a,f){
+const find = function(a,f){
   for(const e of a){
     if(f(e) return e)
   }
