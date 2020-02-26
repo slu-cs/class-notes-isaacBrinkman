@@ -38,20 +38,19 @@ const find = function(a,f){
 
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
-const fs = require('fs');
 const readline = require('readline');
 const user = readline.createInterface({
   input: process.stdin,
   output: process.stdout
 });
 
-// A. Make small talk, using traditional callbacks.
-user.question('What is your name? ', function(name) {
-    user.question("Hello "+name+"\n How are you doing? ",function(state){
-        console.log("I am also " + state);
-      })
-    });
-
+// // A. Make small talk, using traditional callbacks.
+// user.question('What is your name? ', function(name) {
+//     user.question("Hello "+name+"\n How are you doing? ",function(state){
+//         console.log("I am also " + state);
+//       })
+//     });
+//
 
 // The user.question method doesn't actually return a promise, so here is a question function that does.
 // Call this question function in part B instead of calling the user.question method.
@@ -63,7 +62,7 @@ const question = function(prompt) {
 question('What is your name? ')
   .then(n => console.log("Hello" + n))
   .then(question("How are you doing? "))
-  .then(n => console.log("I am also" + n))
+  .then(n => console.log("I am also" + n));
 
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
