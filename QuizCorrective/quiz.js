@@ -89,6 +89,6 @@ while(f1count != 42 && f2count != 24){
     console.log('f2');
   }
   else{
-    console.log('equal '  +f1count + ' ' f2count);
+    console.log('equal '  +f1count + ' ' + f2count);
   }
 }
