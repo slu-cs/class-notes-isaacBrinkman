@@ -83,12 +83,12 @@ f1count = f1();
 f2count = f2();
 while(f1count != 42 && f2count != 24){
   if(f1count > f2count){
-    console.log('f1');
+    console.log('f1' );
   }
   else if (f2count > f1count) {
     console.log('f2');
   }
   else{
-    console.log('equal');
+    console.log('equal '  +f1count + ' ' f2count);
   }
 }
