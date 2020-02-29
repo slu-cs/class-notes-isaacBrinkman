@@ -61,7 +61,7 @@ const question = function(prompt) {
 // B. Make small talk again, using promises.
 question('What is your name? ')
   .then(n => console.log("Hello" + n))
-  .then(question("How are you doing? "))
+  .then(() => question("How are you doing? "))
   .then(n => console.log("I am also" + n));
 
 //////////////////////////////////////////////////////////////// Question 4
