@@ -81,7 +81,7 @@ const f2 = function() {
 // Run f1 and f2 in parallel and log 'f1', 'f2', or 'equal' to indicate which function returned the larger result.
 f1count = f1();
 f2count = f2();
-while(f1 != 42 && f2 != 24){
+while(f1count != 42 && f2count != 24){
   if(f1count > f2count){
     console.log('f1');
   }
