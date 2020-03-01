@@ -86,7 +86,7 @@ Promise.all([f1Count, f2Count])
     if(a[0] > a[1]){
       console.log('f1');
     }
-    if(a[1] > a[0]){
+    else if(a[1] > a[0]){
       console.log('f2');
     }
     else{
