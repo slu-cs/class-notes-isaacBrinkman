@@ -82,7 +82,6 @@ const f2 = function() {
 f1Count = f1();
 f2Count = f2();
 Promise.all([f1Count, f2Count])
-  .then((a) => console.log(a[0], a[1]))
   .then(function(a){
     if(a[0] > a[1]){
       console.log('f1');
