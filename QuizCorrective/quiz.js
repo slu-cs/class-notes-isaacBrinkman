@@ -81,14 +81,6 @@ const f2 = function() {
 // Run f1 and f2 in parallel and log 'f1', 'f2', or 'equal' to indicate which function returned the larger result.
 f1count = f1();
 f2count = f2();
-while(f1count != 42 && f2count != 24){
-  if(f1count > f2count){
-    console.log('f1' );
-  }
-  else if (f2count > f1count) {
-    console.log('f2');
-  }
-  else{
-    console.log('equal '  +f1count + ' ' + f2count);
-  }
-}
+
+Promise.all(f1, f2).then((a,b) => console.log(a,b));
+// f1.then(() = > f2).then(console.log("done"))
