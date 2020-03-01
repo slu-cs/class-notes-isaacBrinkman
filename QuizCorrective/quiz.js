@@ -35,7 +35,7 @@ const find = function(a,f){
 }
 
 //////////////////////////////////////////////////////////////// Question 3
-/*
+
 // This creates the user object described on the quiz.
 // It has a question method you can call in part A.
 const readline = require('readline');
@@ -63,14 +63,14 @@ question('What is your name? ')
   .then(n => console.log("Hello " + n))
   .then(() => question("How are you doing? "))
   .then(n => console.log("I am also " + n));
-*/
+
 //////////////////////////////////////////////////////////////// Question 4
 // Question 4 is commented out because otherwise it would interfere with Question 3.
 // When you're ready to work on Question 4, uncomment it and comment out Question 3.
 
 // This function returns a promise, which produces 42 after an asynchronous delay of one second.
 const f1 = function() {
-  return new Promise(resolve => setTimeout(() => resolve(2), 1000));
+  return new Promise(resolve => setTimeout(() => resolve(42), 1000));
 };
 
 // This function returns a promise, which produces 24 after an asynchronous delay of one second.
