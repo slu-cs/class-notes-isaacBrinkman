@@ -90,6 +90,6 @@ Promise.all([f1Count, f2Count])
       console.log('f2');
     }
     else{
-      print('equal');
+      console.log('equal');
     }
   });
