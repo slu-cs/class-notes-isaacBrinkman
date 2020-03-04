@@ -29,6 +29,9 @@ app.get('/', function(request, response){
     `);
 });
 
+app.use('/cakes', require('./cakes.js'));
+app.use('/pies', require('./pies.js'));
+
 // Handle Undefined routes
 app.use(function(request, response, next){
   console.log('Replies with 404');
