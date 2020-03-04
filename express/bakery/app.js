@@ -5,6 +5,11 @@ const express = require('express');
 // Create the server
 const app = express();
 
+// ignore icon requests
+app.get('/favicon.ico', function(req, res){
+  response.status(204).end();
+});
+
 // Logs requests to the console
 app.use(function(request, response, next){
   console.log('---------------------------', new Date().toLocaleTimeString());
