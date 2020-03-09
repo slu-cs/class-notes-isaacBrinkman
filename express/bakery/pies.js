@@ -19,7 +19,7 @@ router.get('/', function(request, response) {
 // cs-linuxlab-##.stlawu.edu:3000/cakes/id
 router.get('/:id', function(request, response, next) {
   // Pretend database lookup
-  const pie = pies.find(cake => pie.id === request.params.id);
+  const pie = pies.find(pie => pie.id === request.params.id);
   if(!pie) {
     next(); // Pass on the request
   } else{
