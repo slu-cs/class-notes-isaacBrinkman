@@ -31,7 +31,7 @@ router.post('/',function(request, response){
   if(flowers.find(f => f.id === flowers.id)){
     response.status(400).send('Duplicate id');
   }
-  if(!flowers.id){
+  if(!flower.id){
     response.status(400).send('No id');
 
   }else {

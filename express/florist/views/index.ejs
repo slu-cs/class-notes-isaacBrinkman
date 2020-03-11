@@ -27,7 +27,7 @@
         data: $('#body').val()
       };
 
-      // send the requests
+      // send the requests and display the response
       $.ajax(request)
         .done(response => $('textarea').val(JSON.stringify(response)))
         .fail(error => $('textarea').val(JSON.stringify(error)));
