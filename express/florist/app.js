@@ -4,13 +4,12 @@ const express = require('express');
 // Create the server
 const app = express();
 
-// use a view engine
-app.set('view engine','ejs');
+// Use a view engine
+app.set('view engine', 'ejs');
 app.set('views', './views');
 
 // Parse request bodies like query strings
 app.use(express.urlencoded({extended: false}));
-
 
 // Ignore icon requests
 app.get('/favicon.ico', function(request, response) {
@@ -25,13 +24,13 @@ app.use(function(request, response, next) {
   next(); // Keep handling this request
 });
 
-// Render a homepage
+// Render a home page
 app.get('/', function(request, response) {
   response.render('index');
 });
 
-// Maange a collection of flowers
-app.use('/florist', require('flowers.js'));
+// Manage a collection of flowers
+app.use('/flowers', require('./flowers.js'));
 
 // Handle undefined routes
 app.use(function(request, response, next) {
