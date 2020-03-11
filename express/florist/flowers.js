@@ -1,6 +1,6 @@
-// Router for flowers
+// Router for a flower collection
 const express = require('express');
 
-// Create the Router
+// Create the router
 const router = express.Router();
-module.express = router;
+module.exports = router;
