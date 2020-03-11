@@ -7,13 +7,31 @@
 <body>
   <h1>Request</h1>
   <form>
-    <input  type='text' id='method' placeholder="method">
-    <input  type='text' id='path' placeholder="path">
-    <input  type='text' id='body' placeholder="body">
+    <input type='text' id='method' placeholder="method">
+    <input type='text' id='path' placeholder="path">
+    <input type='text' id='body' placeholder="body">
     <button>Send</button>
 
   </form>
   <h1>Response</h1>
   <textarea  rows="5" cols="85"></textarea>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script>
+    // intecept form submits
+    $('form').on('submit', function(event){
+      event.preventDefault();
+      // creating request object
+      const request = {
+        method: $('#method').val(),
+        url: $('#path').val(),
+        data: $('#body').val()
+      };
+
+      // send the requests
+      $.ajax(request)
+        .done(response => $('textarea').val(JSON.stringify(response)))
+        .fail(error => $('textarea').val(JSON.stringify(error)));
+    });
+  </script>
 </body>
 </html>
