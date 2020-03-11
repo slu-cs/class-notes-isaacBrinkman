@@ -31,7 +31,7 @@ app.get('/', function(request, response) {
 });
 
 // Maange a collection of flowers
-app.use('/flowers', require('flowers.js'));
+app.use('/florist', require('flowers.js'));
 
 // Handle undefined routes
 app.use(function(request, response, next) {
