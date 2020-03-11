@@ -43,7 +43,7 @@ router.post('/',function(request, response){
 
 // DELETE /flowers/id
 router.delete('/:id',function(request, response, next){
-  const flower = flowers.find(f => f.id === flowers.id)
+  const flower = flowers.find(f => f.id === flower.id)
   if(!flower){
     next();
   }
@@ -56,7 +56,7 @@ router.delete('/:id',function(request, response, next){
 
 // PUT /flowers/id
 router.put('/:id',function(request, response, next){
-  const flower = flowers.find(f => f.id === flowers.id)
+  const flower = flowers.find(f => f.id === flower.id)
   if(!flower){
     next();
   } else {
